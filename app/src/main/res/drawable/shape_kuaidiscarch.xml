@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 圆角弧度对应的半径 -->
+    <corners
+        android:radius="5dp"
+        />
+
+    <!-- 矩形中内容距离四个边框的距离 -->
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp" />
+
+    <!--  矩形的背景颜色 -->
+    <solid
+        android:color="@color/scarch" />
+    <!-- 边框的颜色 -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/main_bianmin"
+        />
+
+</shape>

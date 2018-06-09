@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homepager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolortext"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--顶部-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/home_vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:indicator_drawable_selected="@drawable/home_bannerindicatorselect"
+                    app:indicator_drawable_unselected="@drawable/home_bannerindicatorunselect"
+                    app:title_height="25dp"
+                    app:title_background="#B3000000"/>
+
+                <ImageView
+                    android:id="@+id/home_news_morenext"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/home_bannertopnews" />
+
+                <!--天气查询-->
+                <LinearLayout
+                    android:id="@+id/home_queryweather1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="35dp"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/home_headview4right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="20sp"
+                           android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/home_headview4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:layout_alignLeft="@id/home_headview4right"
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/home_headview4right2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/whitecolortext"
+                        android:textSize="11sp" />
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+
+            <include
+                layout="@layout/home_saomaview"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/main_bianmin"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/home_green_rectangle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="交通服务"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+
+            <include
+                android:id="@+id/home_buttongroup_jiaotong"
+                layout="@layout/home_buttongroupjiaotong"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/main_bianmin"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/home_blue_retangle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="公共服务"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+            <!--顶部6个按钮-->
+            <include
+                android:id="@+id/home_buttongroup"
+                layout="@layout/home_buttongroup"
+                android:layout_width="match_parent"
+                android:layout_height="190dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/main_bianmin"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/home_red1_rectangle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="健康医疗"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/home_cardgroup_button6test0"
+                    layout="@layout/button7_zhihuiyiliao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+
+                <include
+                    android:id="@+id/home_button_guahaojiuzhen"
+                    layout="@layout/button9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <include
+                    android:id="@+id/home_button_guahaojiuzhenjilu"
+                    layout="@layout/button10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/main_bianmin"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/life_yellow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="生活缴费"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+
+            <include
+                layout="@layout/home_buttongrouptwo"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/main_bianmin"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/home_zise1_rectangle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="金融服务"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_line_hight"
+                android:background="@color/homegray" />
+            <include
+                layout="@layout/home_buttongroupthree"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#262727">
+
+    <include layout="@layout/title_bar_layout2"/>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/iv_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/iv_head"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text=""/>
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/iv_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:text="河南许昌"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/iv_code"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:text="我的电子健康卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="55dp"
+            android:text="许都通，让您的生活更轻松!"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="@mipmap/qr_code_foot_img"/>
+    </LinearLayout>
+
+</LinearLayout>

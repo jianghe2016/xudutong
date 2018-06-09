@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/benefitthepeopleformyaccountlayouttopbackaroound"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headview">
+
+            <LinearLayout
+                android:id="@+id/benefitthepeopleformyaccountlayoutback"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/BACK_JIANTOU"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/benefitthepeoplewhitejiantou2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/whitecolortext"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/benefitthepeopletransactiondetailtopimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="交易明细"
+                    android:textColor="@color/whitecolortext"
+                    android:textSize="@dimen/headviewtextsize" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/benefitthepeopletransactiondetailtopimg"
+                    android:src="@drawable/benefitthepeopleaddiccarditemimg2" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mbenefitthepeopleformyaccountlayoutmoneydetails"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom"
+                android:text="查询明细"
+                android:textColor="@color/whitecolortext"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/benefitthepeopleformyaccountlayouteyes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="账户余额"
+                android:textColor="#d1d5ea"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/mbenefitthepeopleformyaccountlayouteyesimg"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/xdt_close_eye" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mbenefitthepeopleformyaccountlayoutmoneylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="@color/whitecolortext"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mbenefitthepeopleformyaccountlayoutmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="***,***"
+                android:textColor="@color/whitecolortext"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#fd2d70" />
+
+        <LinearLayout
+            android:id="@+id/benefitthepeopleformyaccountlayoutitem0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="绑定银行卡"
+                android:textColor="@color/whitecolortext"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:paddingRight="10dp"
+                android:text="3张"
+                android:textColor="@color/whitecolortext"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/benefitthepeoplewhitejiantou" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/benefitthepeopleformyaccountlayoutmiddleitem1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/whitecolortext"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/benefitthepeopleformyaccountlayoutitem_img1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="充值"
+            android:textColor="#6c6b6b"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/person_center_settingnext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/benefitthepeopleformyaccountlayoutmiddleitem2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/whitecolortext"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/benefitthepeopleformyaccountlayoutitem_img2" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="提现"
+            android:textColor="#6c6b6b"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/person_center_settingnext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/benefitthepeopleformyaccountlayoutmiddleitem3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/whitecolortext"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/benefitthepeopleformyaccountlayoutitem_img3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="账单"
+            android:textColor="#6c6b6b"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/person_center_settingnext" />
+    </LinearLayout>
+</LinearLayout>

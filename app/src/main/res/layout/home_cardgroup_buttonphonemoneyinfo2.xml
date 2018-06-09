@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_cardgroup_button_phonemoneyinfo2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolortext"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/home_cardgroup_buttonphonemoneyinfo2back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="充值中心"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/home_cardgroup_buttonphonemoneyinfo2eduittext1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="20dp"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/home_cardgroup_buttonphonemonetinfo2chosepeople"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/home_phonemoney_selectperple" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_cardgroup_buttonphonemoneyinfo2phoneplace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:text=""
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#cfcccc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#efeff4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#cfcccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:text="充值金额"
+            android:textColor="@color/blacktext"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="￥"
+                android:textColor="@color/blacktext"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/home_cardgroup_buttonphonemoneyinfo2eduittext2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入金额"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/home_cardgroup_buttonphonemoneyinfo2submit"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_phonemoneybuttonunselect1"
+                android:text="充值"
+                android:textColor="@color/whitecolortext" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#cfcccc" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_cardgroup_buttonphonemoneyinfo2recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:text="更多充值"
+        android:textColor="@color/blacktext"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="10dp"
+        android:background="#cfcccc" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_cardgroup_buttonphonemoneyinfo2recycleview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

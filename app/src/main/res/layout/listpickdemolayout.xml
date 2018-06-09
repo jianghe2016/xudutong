@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whitecolortext"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/listpickdemolayoutback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+        <TextView
+            android:id="@+id/listpickdemolayoutsubmit"
+            android:layout_marginLeft="-70dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/whitecolortext"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <com.maning.calendarlibrary.MNCalendarVertical
+        android:id="@+id/mnCalendarVertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--    <com.maning.calendarlibrary.MNCalendar
+        android:id="@+id/mnCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mnCalendar_maxYear="2018"
+        app:mnCalendar_minYear="2017" />-->
+
+
+
+
+   <!-- <com.xdt.xudutong.pickview.CalendarPickerView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />-->
+</LinearLayout>

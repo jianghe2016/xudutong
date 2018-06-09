@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/person_merchant_recordback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="商户登录"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="#b4b4b4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolortext"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/person_center_item_1_use" />
+
+            <EditText
+                android:id="@+id/person_merchant_recordloadin_eduittext1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="手机号/用户名"
+                android:maxLength="15"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#b4b4b4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/person_item1passwordimg" />
+
+            <EditText
+                android:password="true"
+                android:id="@+id/person_merchant_recordloadin_eduittext2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="请输入您的密码"
+                android:maxLength="25"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b4b4b4" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/person_merchant_recordsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/home_gongjijinsubmitbackaround"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/whitecolortext"
+        android:textSize="18sp" />
+
+<!--    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:paddingRight="45dp"
+        android:text="忘记密码？"
+        android:textColor="#767676" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/person_merchant_loadin_backaround" />
+    </LinearLayout>
+
+
+</LinearLayout>

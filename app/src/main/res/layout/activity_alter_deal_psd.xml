@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xdt.xudutong.activitys.AlterDealPsdActivity">
+
+    <include layout="@layout/title_bar_layout"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="为了保障您账户安全"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改密码前需验证身份"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:text="请选择一种验证方式"/>
+
+    <RelativeLayout
+        android:background="@mipmap/transaction_choose_backview"
+        android:id="@+id/phone"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/transaction_changepsd_phone"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/text_view"
+            android:layout_marginLeft="10dp"
+           android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_phone"
+               android:text=""
+               android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="通过手机验证码和身份证号验证身份"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/person_about_companyaboutnext"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/psd"
+        android:background="@mipmap/transaction_choose_backview"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_psd"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/transaction_changepsd_password"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/tv_psd"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18sp"
+                android:text="交易密码"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="通过原交易密码验证身份"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/person_about_companyaboutnext"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

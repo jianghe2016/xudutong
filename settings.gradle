@@ -1,0 +1,2 @@
+include ':app', ':lib-zxing', ':calendarlibrary', ':passwordview', ':keyboard'
+

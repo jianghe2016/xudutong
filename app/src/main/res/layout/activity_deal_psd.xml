@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:psd="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xdt.xudutong.activitys.DealPsdActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical">
+
+    <include layout="@layout/title_bar_layout"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入原密码，完成身份验证"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入交易密码"/>
+
+        <com.xdt.xudutong.widget.PayPsdInputView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            psd:maxCount="6"
+            psd:psdType="weChat"
+            psd:rectAngle="4dp"/>
+
+        <TextView
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:text="*密码为6位数字"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/alter_pad_button_bg"
+            android:text="下一步"
+            android:textColor="#FFFFFF"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+    <com.wind.keyboard.OfoKeyboardView
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:paddingTop="0dp"
+        android:focusableInTouchMode="true"
+        android:keyPreviewOffset="0dp"
+        android:keyTextColor="#000"
+        android:shadowColor="#fff"
+        android:shadowRadius="0.0"
+        android:keyBackground="@drawable/bg_keyboardview"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

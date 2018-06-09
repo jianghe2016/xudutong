@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/whitecolortext">
+
+        <LinearLayout
+            android:id="@+id/home_buttongroupbutton6querybuslineback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_busrequeryback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="#108ee9"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="实时公交"
+            android:textColor="#3c3c3c"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/home_buttongroupbutton6querybuslinecontent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#2575d4"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:paddingTop="10dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/home_button6_querybuslineinfobuscarimg" />
+
+                        <TextView
+                            android:id="@+id/home_button6_querybuslineinfobusnukmber"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="服务时间 : "
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/home_button6_querybuslineinfoshoufatime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text=" -"
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/home_button6_querybuslineinfomofatime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="-3dp"
+                            android:gravity="center_vertical"
+
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+                        <TextView
+                            android:id="@+id/home_button6_querybuslineinfostarplace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+
+                            android:textColor="@color/whitecolortext"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="2dp"
+                            android:text=" — "
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/home_button6_querybuslineinfoendplace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/whitecolortext"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/home_button6_querybuslineinfobusjiaohuan"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/busjiaohuan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/search_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#f0eff5" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_button6_querybuslineinforecycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/whitecolortext" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <include
+            android:id="@+id/emptystates_layout"
+            layout="@layout/searchemptylayout2"
+           android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

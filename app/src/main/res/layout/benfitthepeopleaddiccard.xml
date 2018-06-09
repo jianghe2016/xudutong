@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/benfitthepeopleaddiccardlayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/whitecolortext">
+
+        <LinearLayout
+            android:id="@+id/benfitthepeopleaddiccardback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/personmerchantsearchnetiddetailsback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitetopgraytext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-70dp"
+            android:gravity="center"
+            android:text="绑定银行卡"
+            android:textColor="@color/whitetopgraytext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e5e5e5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edittext6_2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/benfitthepeopleaddiccardaddcardbutton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/benefitthepeopleaddiccarrd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加银行卡"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/benfitthepeopleaddiccarditem1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/benefitthepeopleaddiccarditembackaround">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/benefitthepeopleaddiccarditemimg1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="工商银行"
+                android:textColor="@color/whitecolortext"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:text="储蓄卡"
+                android:textColor="@color/whitecolortext"
+                android:textSize="13sp" />
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:text="**** **** **** 2918"
+                android:textColor="@color/whitecolortext" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/benfitthepeopleaddiccarddelect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingTop="15dp"
+            android:text="删除"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+</LinearLayout>

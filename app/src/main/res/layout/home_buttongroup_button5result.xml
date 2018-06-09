@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/homebuttongroup_button5resultback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="查询结果"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/search_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/home_buttongroup_button5resulttextview"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#0c9f68"
+                android:gravity="center"
+                android:textColor="@color/whitecolortext"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_buttongroup_button5resultrecycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/emptystates_layout"
+            android:visibility="gone"
+            layout="@layout/searchemptylayout" />
+    </FrameLayout>
+
+</LinearLayout>

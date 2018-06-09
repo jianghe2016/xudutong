@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+    <ImageView
+        android:background="#FFFFFF"
+        android:id="@+id/littlegreenbikesearchresultnoxdtcard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/home_bike_nobike" />
+
+    <TextView
+        android:background="#FFFFFF"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="您的卡片未开通此功能" />
+
+    <TextView
+        android:background="#FFFFFF"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="暂时不能用车" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/littlegreenbikecomeindialog1dissmiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/littlegreenbikecomeindialogcanle" />
+    </LinearLayout>
+</LinearLayout>

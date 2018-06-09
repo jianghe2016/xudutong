@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!--headview字体大小-->
+    <dimen name="headview">45dp</dimen>
+    <dimen name="mymarlifet">20dp</dimen>
+    <dimen name="mymarright">20dp</dimen>
+    <!-- 主页面Line的高度-->
+    <dimen name="home_line_hight">0.7dp</dimen>
+
+
+    <!-- 返回剪头外Linear的为了居中的左偏移量-->
+    <dimen name="backlinearklayoutwithmarinleft">-70dp</dimen>
+    <!-- 许都通卡挂失页面的图标-->
+    <dimen name="xdtcardlock1">50dp</dimen>
+    <dimen name="xdtcardlock2">50dp</dimen>
+    <dimen name="xdtcardlock2martop">17.8dp</dimen>
+    <dimen name="xdtcardlock2marright">16.7dp</dimen>
+    <!--其他的常规字体大小-->
+    <dimen name="the_big">18sp</dimen>
+    <dimen name="the_small">12sp</dimen>
+    <!--查询消费列表字体-->
+    <dimen name="the_smalltext">12sp</dimen>
+    <!--加载界面的圆圈大小-->
+    <dimen name="progresshight">35dp</dimen>
+    <dimen name="progresswidth">35dp</dimen>
+
+    <dimen name="headviewtextsize">18sp</dimen>
+    <!--homepagerbuttodialog的对话框大小-->
+    <!--statelayout加载状态属性-->
+    <!--天健的dimens-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dpx_010">5dip</dimen>
+    <dimen name="dpx_012">6dip</dimen>
+    <dimen name="dpx_120">60dip</dimen>
+    <dimen name="dpx_020">10dip</dimen>
+    <dimen name="dpx_030">15dip</dimen>
+    <dimen name="f1">17dip</dimen>
+    <dimen name="f2">15dip</dimen>
+    <dimen name="f3">14dip</dimen>
+    <dimen name="f4">12dip</dimen>
+    <dimen name="f5">11dip</dimen>
+    <dimen name="f6">10dip</dimen>
+    <dimen name="f7">22dip</dimen>
+    <dimen name="f8">9dip</dimen>
+    <dimen name="f9">8dip</dimen>
+    <dimen name="dpx_076">38dip</dimen>
+    <dimen name="dpx_022">11dip</dimen>
+    <!-- ↓自定义日历的属性↓-->
+    <dimen name="text_size_day">14sp</dimen>
+    <dimen name="text_size_month">12sp</dimen>
+    <dimen name="text_size_day_name">14sp</dimen>
+    <dimen name="header_month_height">34dip</dimen>
+    <dimen name="selected_day_radius">16dip</dimen>
+    <dimen name="event_dots_radius">2.5dp</dimen>
+    <dimen name="calendar_height">270dp</dimen>
+    <dimen name="month_info_text_size">24sp</dimen>
+    <!-- ↑自定义日历的属性结束↑-->
+    <!--ocr相机视图属性-->
+    <dimen name="camera_left_margin">18dp</dimen>
+    <dimen name="camera_right_margin">18dp</dimen>
+    <dimen name="camera_bottom_margin">16dp</dimen>
+    <dimen name="camera_top_margin">16dp</dimen>
+    <!-- ↓自定义日历的属性2↓-->
+    <dimen name="calendar_day_headers_paddingbottom">6dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">20dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    <!-- ↑自定义日历的属性结束↑-->
+</resources>

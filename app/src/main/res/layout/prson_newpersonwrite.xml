@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/person_newpersonwriteparents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolortext"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/person_newpersonwritefirstline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/locallife_headviewtext" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headview"
+            android:background="@color/locallife_headviewtext">
+
+            <LinearLayout
+                android:id="@+id/person_newpewrsonwriteback"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/BACK_JIANTOU"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/home_weatherback" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/whitecolortext"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+                android:gravity="center"
+                android:text="用户注册"
+                android:textColor="@color/whitecolortext"
+                android:textSize="@dimen/headviewtextsize"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/newperson_item1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#ebebeb"
+            android:hint="请输入您的昵称"
+            android:maxLength="20"
+            android:paddingLeft="20dp"
+            android:textColor="#ababab"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/newperson_item2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#ebebeb"
+            android:hint="请输入您的手机号(用户名)"
+            android:maxLength="11"
+            android:paddingLeft="20dp"
+            android:textColor="#ababab"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/newperson_item3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#ebebeb"
+                android:hint="创建密码(6~20位数字、字母组合)"
+                android:maxLength="20"
+                android:paddingLeft="20dp"
+                android:password="true"
+                android:textColor="#ababab"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/person_newpewrsonwriteprogressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+
+        <EditText
+
+            android:id="@+id/newperson_item4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#ebebeb"
+            android:hint="确认密码(6~20位数字、字母组合)"
+            android:maxLength="20"
+            android:paddingLeft="20dp"
+            android:password="true"
+            android:textColor="#ababab"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/newperson_itemhomeplace"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#ebebeb"
+            android:gravity="center_vertical"
+            android:hint="请点输入您的现居地址(必填)"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:textColor="#ababab"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/newperson_itemhomeplace2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="#ebebeb"
+            android:hint="请输入您的户籍所在地(选填)"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:textColor="#ababab"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/newperson_item5"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:background="#ebebeb"
+                android:hint="请输入验证码"
+                android:paddingLeft="20dp"
+                android:textColor="#ababab"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/newperson_item6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#26d77b"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="验证码"
+                android:textColor="@color/whitecolortext" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/prson_newpersonwrite_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyCheck_Box" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:gravity="center_vertical"
+                android:text="我已同意"
+                android:textColor="#555555"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/person_zhucenote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="《用户注册协议》"
+                android:textColor="#2673d7"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/newperson_item7"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#2673d7"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/whitecolortext"
+            android:textSize="17sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="5dp"
+            android:paddingRight="20dp"
+            android:text="* 以上信息均为必填信息"
+            android:textColor="#7e7e7e"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

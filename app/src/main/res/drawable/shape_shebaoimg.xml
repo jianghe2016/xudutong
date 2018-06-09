@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+
+    <!-- 矩形中内容距离四个边框的距离 -->
+    <padding
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="7dp" />
+
+    <!--  矩形的背景颜色 -->
+    <solid android:color="#ffffff" />
+    <!-- 边框的颜色 -->
+    <size
+        android:width="30dp"
+        android:height="30dp" />
+</shape>

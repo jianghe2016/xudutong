@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/weizhangclear"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/home_cardgroup_button3back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="违章查询"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RadioGroup
+            android:id="@+id/cardgroupbutton32"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/cardgroupbutton33"
+                style="@style/Home_Radio_Button"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/home_weizhangselect1"
+                android:checked="true"
+                android:gravity="center"
+                android:text="小型车"
+                android:textColor="@color/whitecolortext"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/cardgroupbutton34"
+                style="@style/Home_Radio_Button"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/home_weizhangselect2"
+                android:gravity="center"
+                android:text="大型车"
+                android:textColor="@color/whitecolortext"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/cardgroupbutton35"
+                style="@style/Home_Radio_Button"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/home_weizhangselect3"
+                android:gravity="center"
+                android:text="挂车"
+                android:textColor="@color/whitecolortext"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="15dp"
+            android:background="#d9d9d9" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="#2575d4"
+                android:gravity="center"
+                android:text="豫K"
+                android:textColor="@color/whitecolortext"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/cardgroupbutton31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#ebebeb"
+                android:hint="请输入车牌号"
+                android:paddingLeft="15dp"
+                android:textColor="@color/blacktext"
+                android:textColorHint="#bcbcbc"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cardgroupbutton36"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="#2575d4"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="@color/whitecolortext"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="查询结果"
+            android:textColor="@color/blacktext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d9d9d9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/home_cardgroupbuttonlistview3framelayouttext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/weizhangothercar"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/home_cardgroupbuttonlistview3framelayouttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/whiteblacktext"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/home_cardgroupbuttonlistview3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:divider="#00000000"
+                android:dividerHeight="10dp"
+                android:scrollbars="none" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

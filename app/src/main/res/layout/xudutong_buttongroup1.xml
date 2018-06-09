@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/xdt_buttongroupone1"
+            layout="@layout/xdtbutton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bianmin" />
+
+        <include
+            android:id="@+id/xdt_buttongroupone2"
+            layout="@layout/xdtbutton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bianmin" />
+
+        <include
+            android:id="@+id/xdt_buttongroupone3"
+            layout="@layout/xdtbutton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bianmin" />
+
+        <include
+            android:id="@+id/xdt_buttongroupone4"
+            layout="@layout/xdtbutton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="18dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_bianmin" />
+    <!--第二行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <include
+            android:id="@+id/xdt_buttongroupone5"
+            layout="@layout/xdtbutton5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bianmin" />
+
+        <include
+            android:id="@+id/xdt_buttongroupone6"
+            layout="@layout/xdtbutton6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bianmin" />
+
+        <include
+            android:id="@+id/xdt_buttongroupone7"
+            layout="@layout/xdtbutton7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+
+        <TextView
+
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_bianmin" />
+
+        <include
+            android:id="@+id/xdt_buttongroupone8"
+            layout="@layout/xdtbutton8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

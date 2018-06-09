@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xdt.xudutong.utils.SwipeMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:clickable="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/shape_edittext1"
+        android:id="@+id/pushlittlegreen_recycleview_rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/pushlittlegreenrecycleview_itemtext1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingBottom="1dp"
+                android:textColor="#4c4c4c"
+                android:textSize="14sp" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/pushlittlegreenrecycleview_itemtext2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:paddingTop="1dp"
+                android:textColor="#a1a1a1"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="end"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/pushlittlegreenrecycleview_itemtext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center_vertical"
+                    android:textColor="#a1a1a1"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/pushlittlegreenrecycleview_itemoval"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/shape_edittext9_2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pushlittlegreenrecycleview_itemjiantou"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/person_center_settingnext" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnsetreaded"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:text="标为已读"
+        android:textColor="@color/whitecolortext"
+        android:background="@color/grayyy" />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#ff3a2f"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+
+</com.xdt.xudutong.utils.SwipeMenuView>

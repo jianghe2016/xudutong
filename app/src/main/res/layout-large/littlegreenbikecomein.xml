@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/littlegreembikecomeinall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/headview"
+            android:background="@color/locallife_headviewtext">
+
+            <LinearLayout
+                android:id="@+id/littlegreembikecomeinback"
+                android:layout_width="70dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    style="@style/BACK_JIANTOU"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/home_weatherback"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/whitecolortext"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+                android:gravity="center"
+                android:text="小绿骑行"
+                android:textColor="@color/whitecolortext"
+                android:textSize="@dimen/headviewtextsize"/>
+
+            <TextView
+                android:id="@+id/tv_problem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center|right"
+                android:text="常见问题"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/littlegreembikecomeinallitem"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#fff58a"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/littlegreembikecomeinallitemtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="18dp"
+                android:text="您还没有实名认证，部分功能不能使用。"
+                android:textColor="#ff6234"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:id="@+id/littlegreembikecomeinallitemimgcanle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/person_viewstatesimg"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/littlegreenbikecomeinbackaround1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="60dp">
+
+                <ImageView
+                    android:id="@+id/littlegreenbikecomeinsaoyisao"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/littlegreenbikecomeinimg0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="60dp">
+
+                    <LinearLayout
+                        android:id="@+id/littlegreenbikecomeinlinear1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/littlegreenbikecomeinimg1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="15dp"
+                            android:text="站点查询"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="#31EC8D"/>
+
+                    <LinearLayout
+                        android:id="@+id/littlegreenbikecomeinlinear3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/littlegreenbikecomeinimg3"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="15dp"
+                            android:text="骑行记录"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="#31EC8D"/>
+
+                    <LinearLayout
+                        android:id="@+id/littlegreenbikecomeinlinear2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/littlegreenbikecomeinimg2"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="15dp"
+                            android:text="异常订单"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="60dp"
+                        android:background="#31EC8D"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_problem"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/bike_problem"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="15dp"
+                            android:text="常见问题"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/littlegreenbikecomeinbackaround2"/>
+
+                    <RelativeLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/xiaolv_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_horizontal"
+                                android:text="扫码借车收费标准"
+                                android:textColor="#05AF59"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_horizontal"
+                                android:text="每天使用不限次数，每次一小时内免费。"
+                                android:textColor="#3c3c3c"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_horizontal"
+                                android:text="超过一小时后，按1元每小时收费，一天20元封顶。"
+                                android:textColor="#3c3c3c"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_horizontal"
+                                android:text="以上按5元每小时收费，"
+                                android:textColor="#3c3c3c"
+                                android:textSize="10sp"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="8dp"
+                                android:background="#d2d2d2"
+                                android:gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/tv_xudoutong"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_horizontal"
+                                android:text="许都通公司：0374-7021111"
+                                android:textColor="#3c3c3c"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:id="@+id/tv_guanlicenter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center_horizontal"
+                                android:text="许昌公共自行车管理中心：0374-3332929"
+                                android:textColor="#3c3c3c"
+                                android:textSize="10sp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

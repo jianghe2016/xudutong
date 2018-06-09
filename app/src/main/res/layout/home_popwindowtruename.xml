@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp">
+
+            <RelativeLayout
+                android:id="@+id/tttttt"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/shape_edittext1_1_1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center_horizontal"
+                    android:text="实名认证后"
+                    android:textColor="#4e8cee"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="115dp"
+                    android:gravity="center_horizontal"
+                    android:text="账户更安全"
+                    android:textColor="#fec001"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center_horizontal"
+                    android:text="享受更多服务"
+                    android:textColor="#4e8cee"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/home_popwindowbutton"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape_edittext4_4"
+                    android:elevation="10dp"
+                    android:text="立即去实名"
+                    android:textColor="@color/whitecolortext" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/home_popwindowimg111" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/home_popwindowbuttoncancle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/littlegreenbikecomeindialogcanle" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

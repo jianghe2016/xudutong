@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_edittext1"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text=" 提示"
+            android:textColor="#4c4b4b"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/benfitthepeopleaddiccarddialog1_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="删除此绑定卡后您将不能通过此卡进行资金转入和转出交易，确定删除此绑定卡吗？"
+            android:textColor="#4c4b4b" />
+
+        <Button
+            android:id="@+id/benfitthepeopleaddiccarddialog1_canle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edittext4"
+            android:text="取消"
+            android:textColor="@color/whitecolortext" />
+
+        <Button
+            android:id="@+id/benfitthepeopleaddiccarddialog1_delect"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_edittext1_1"
+            android:text="删除"
+            android:textColor="#2a84f8" />
+    </LinearLayout>
+
+
+</LinearLayout>

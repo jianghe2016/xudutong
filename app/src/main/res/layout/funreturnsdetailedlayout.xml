@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f5"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/funreturnsdetailedlayoutlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/whitecolortext">
+
+        <LinearLayout
+            android:id="@+id/funreturnsdetailedlayoutback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/personmerchantsearchnetiddetailsback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitetopgraytext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-70dp"
+            android:gravity="center"
+            android:text="收益明细"
+            android:textColor="@color/whitetopgraytext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d8d6d6" />
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:id="@+id/funreturnsdetailedlayoutbacktopview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolortext"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="累计收益"
+            android:textColor="#1d1d1d"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/funreturnsdetailedlayoutbacktopviewimg1"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/funds1layoutsanjiao" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d8d6d6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/whitecolortext"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:text="累计收益（元）"
+        android:textColor="#1d1d1d"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whitecolortext"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp"
+        android:text="13.29"
+        android:textColor="#e20b1f"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#e20b1f">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.31"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.37"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="20dp"
+        android:background="#a6a7a7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.30"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.30"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#a6a7a7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.31"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.37"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="20dp"
+        android:background="#a6a7a7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.30"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.30"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#a6a7a7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.31"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.37"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="20dp"
+        android:background="#a6a7a7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.30"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.30"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginTop="20dp"
+        android:background="#a6a7a7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="2018.01.30"
+            android:textColor="@color/whitecolortext" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            android:paddingRight="15dp"
+            android:text="0.30"
+            android:textColor="@color/whitecolortext" />
+    </LinearLayout>
+</LinearLayout>

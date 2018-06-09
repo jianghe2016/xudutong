@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F5F5"
+    tools:context="com.xdt.xudutong.activitys.SettingPsdActivity">
+
+    <include layout="@layout/title_bar_layout"/>
+
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:id="@+id/rel_deal_psd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="交易密码"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/person_about_companyaboutnext"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:id="@+id/rel_login_psd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="登录密码"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/person_about_companyaboutnext"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

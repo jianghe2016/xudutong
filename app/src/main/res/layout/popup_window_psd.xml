@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="440dp"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home_phone_money_buttom_popwindowimg1"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="输入密码"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"/>
+    
+    <LinearLayout
+        android:background="@drawable/et_psd_bg"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <EditText
+            android:background="@null"
+            android:id="@+id/et_psd"
+            android:inputType="numberPassword"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"/>
+        <Button
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_next_bg"
+            android:text="确定"
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_psd"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2A84F8"
+        android:textSize="14sp"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="right"
+        android:text="忘记密码？"/>
+
+    <com.wind.keyboard.OfoKeyboardView
+        android:layout_marginTop="68dp"
+        android:id="@+id/keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:paddingTop="0dp"
+        android:focusableInTouchMode="true"
+        android:keyPreviewOffset="0dp"
+        android:keyTextColor="#000"
+        android:shadowColor="#fff"
+        android:shadowRadius="0.0"
+        android:keyBackground="@drawable/bg_keyboardview"
+        android:layout_gravity="bottom"
+        />
+
+
+</LinearLayout>

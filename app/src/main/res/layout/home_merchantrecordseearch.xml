@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_merchantrecordseearchback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/home_merchantrecordseearchdetailstopviewtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-75dp"
+            android:gravity="center"
+            android:text="记录查询"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/whitecolortext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/home_merchantrecordseearchdateselectlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#f2f2f2"
+                    android:orientation="vertical">
+                    <!--第一行第一个-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/whitecolortext"
+                        android:orientation="horizontal"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="起止日期"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchdetailsselectdate1"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center_vertical"
+                            android:text="2017-08-15"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/home_merchantrecordseearchdateselect" />
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchdetailsselectdate2"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="2017-08-15"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                    <!--第一行第二个-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@color/whitecolortext"
+                        android:orientation="horizontal"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="交易网点"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchdetailsselectnetid"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/person_merchant_xiaofeijilueduitbackaround"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:textColor="#333333"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:background="@color/whitecolortext"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/home_merchantrecordseearchimg2backaround"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchsubmit"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="25dp"
+                            android:background="@drawable/home_ranqibutton"
+                            android:gravity="center"
+                            android:text="查询"
+                            android:textColor="@color/whitecolortext"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@drawable/home_merchantrecordseearchyinying" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/whitecolortext"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/home_merchantrecordseearchmiddleimg1" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="交易总数："
+                            android:textColor="#484848"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchalltotal"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#2673d7"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="次数："
+                            android:textColor="#484848"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchallcount"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#2673d7"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="总金额："
+                            android:textColor="#484848"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/home_merchantrecordseearchallmoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#2673d7"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.jcodecraeer.xrecyclerview.XRecyclerView
+                    android:id="@+id/home_merchantrecordseearchrecycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/whitecolortext" />
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/home_merchantrecordseearchnothingbackaround"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/person_merchan_nothing" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/home_merchantrecordseearchimg1linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/whitecolortext"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/home_merchantrecordseearchimg1" />
+
+                <ImageView
+                    android:id="@+id/home_merchantrecordseearchimg1rightjiantou1around"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-30dp"
+                    android:src="@drawable/home_merchantrecordseearchimg1rightjiantou1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

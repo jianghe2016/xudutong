@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fundsbuyinlayoutall"
+    android:background="#f6f5f5"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/whitecolortext">
+
+        <LinearLayout
+            android:id="@+id/fundsbuyinlayoutback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/personmerchantsearchnetiddetailsback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitetopgraytext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-70dp"
+            android:gravity="center"
+            android:text="买入"
+            android:textColor="@color/whitetopgraytext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:background="@color/whitecolortext"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:text="许都通余额"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/home_huiminbaoselectcard_buttom_popwindowimg2"/>
+
+            <TextView
+                android:id="@+id/tv_yue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_chongzhi"
+                android:text="¥ 30.00"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_chongzhi"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="#FF302F"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fundsbuyinlayoutselecticcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/whitecolortext"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/xdt_chongzhi_gongshang"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="中国工商银行"
+                    android:textColor="#0f0f0f"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="尾号5648储蓄卡"
+                    android:textColor="#4c4c4c"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:src="@drawable/person_center_settingnext"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="买入金额"
+            android:textColor="#1d1d1d"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="¥"
+                android:textColor="#1d1d1d"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/et_buy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="输入金额"
+                android:inputType="numberDecimal"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:textColor="#1d1d1d"
+                android:textColorHint="#c8c7c7"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:id="@+id/fundsbuyinlayoutmiddletext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="预计01月15日(星期一)确认份额，开始计算收益"
+            android:textColor="#1d1d1d"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/fundsbuyinlayoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_edittext2"
+        android:gravity="center"
+        android:text="确认购买"
+        android:enabled="false"
+        android:textColor="@color/whitecolortext"
+        android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_psd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:background="#80000000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp">
+
+                        <ImageView
+                            android:id="@+id/iv_dismiss"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="16dp"
+                            android:src="@drawable/home_phone_money_buttom_popwindowimg1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="输入密码"
+                            android:textColor="#000000"
+                            android:textSize="18sp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#999999"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/et_psd_bg">
+
+                        <EditText
+                            android:paddingLeft="5dp"
+                            android:id="@+id/et_psd"
+                            android:singleLine="true"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.5"
+                            android:background="@null"
+                            android:maxLength="6"
+                            android:inputType="numberPassword"/>
+
+                        <Button
+                            android:id="@+id/btn_next"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_next_bg"
+                            android:text="确定"
+                            android:textColor="#FFFFFF"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_forget_psd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="忘记密码？"
+                        android:textColor="#2A84F8"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+                <com.wind.keyboard.OfoKeyboardView
+                    android:id="@+id/keyboard_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:keyBackground="@drawable/bg_keyboardview"
+                    android:keyPreviewOffset="0dp"
+                    android:keyTextColor="#000"
+                    android:paddingTop="0dp"
+                    android:shadowColor="#fff"
+                    android:shadowRadius="0.0"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xdt.xudutong.activitys.Verify_ID_NumberActivity">
+
+    <include layout="@layout/title_bar_layout"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="为了您的账户安全,需完成身份验证"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入您的身份证号"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="身份证号"
+        android:textColor="#999999"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/et_id_number"
+        android:background="@null"
+        android:hint="请输入本人身份证号"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="#999999"
+        android:layout_marginRight="25dp"
+        android:layout_height="45dp"/>
+
+    <include layout="@layout/line"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/alter_pad_button_bg"
+        android:text="下一步"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

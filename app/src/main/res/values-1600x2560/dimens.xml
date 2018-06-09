@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="xdtcardlock1">70dp</dimen>
+    <dimen name="xdtcardlock2">70dp</dimen>
+    <dimen name="xdtcardlock2martop">17.3dp</dimen>
+    <dimen name="xdtcardlock2marright">16dp</dimen>
+</resources>

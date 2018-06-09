@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@drawable/home_merchantrecordseearchrecycle1itembackaround"
+    android:orientation="horizontal"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp">
+    <!--第一列-->
+    <!--第一列-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home1_merchantrecordseearchleft1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_merchantrecordseearchrecycleitemimg1"
+            android:gravity="center"
+            android:text="¥   50.00元"
+            android:textColor="@color/whitecolortext"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="交易日期："
+            android:textColor="#484848"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/home1_merchantrecordseearchleft2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017-08-10 12:00"
+            android:textColor="#484848"
+            android:textSize="11sp" />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上传日期："
+            android:textColor="#484848"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/home1_merchantrecordseearchleft3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2017-08-10 12:01"
+            android:textColor="#484848"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!--第二列-->
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home1_merchantrecordseearchright1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="许都通卡号：4110025896412"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/home1_merchantrecordseearchright2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="姓 名：张**"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/home1_merchantrecordseearchright3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="交易类型：PC钱包充值"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/home1_merchantrecordseearchright4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="商户名称：客服部"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/home1_merchantrecordseearchright5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="操 作 员：李**"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mydialogshape"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:paddingTop="15dp"
+            android:src="@drawable/person_addcardfail" />
+
+        <LinearLayout
+            android:id="@+id/person_addcardfail_dialog_cancel"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="70dp"
+                android:src="@drawable/person_fankui_doalig_back" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="绑卡失败！"
+        android:textColor="@color/blacktext"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/person_addcardfail_dialog_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="该卡与实名认证信息不匹配"
+        android:textColor="#ff2828"
+        android:textSize="16sp" />
+</LinearLayout>

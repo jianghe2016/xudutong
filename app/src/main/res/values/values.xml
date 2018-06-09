@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Cookie">
+        <attr format="color" name="cookieTitleColor"/>
+        <attr format="color" name="cookielist"/>
+        <attr format="color" name="cookieMessageColor"/>
+        <attr format="color" name="cookieActionColor"/>
+        <attr format="color" name="cookieBackgroundColor"/>
+        <attr format="dimension" name="titleTextSize"/>
+        <attr format="dimension" name="messageTextSize"/>
+        <attr format="dimension" name="actionTextSize"/>
+    </declare-styleable>
+</resources>

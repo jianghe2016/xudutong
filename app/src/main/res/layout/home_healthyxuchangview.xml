@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/actionsheet_single_normal"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="13sp"
+        android:hint="请输入您的地区"
+        android:background="@drawable/shape_edittext"
+        android:id="@+id/home_healthyxuchangtopeduittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textCursorDrawable="@drawable/color_cursor" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_healthyxuchangrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

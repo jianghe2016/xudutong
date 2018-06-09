@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/person_cardmanager_backlinearlayout"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/person_changephone_toptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="手机验证"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/whitecolortext"
+        android:orientation="horizontal">
+
+        <EditText
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:lines="11"
+            android:inputType="phone"
+            android:id="@+id/person_cardmanager_checktext1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="#262626"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/person_cardmanager_checkbutton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#26d77b"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="发送验证码"
+            android:textColor="@color/whitecolortext"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b7b7b7" />
+
+    <EditText
+        android:id="@+id/person_cardmanager_checktext2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/whitecolortext"
+        android:hint="请输入验证码"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="#ababab"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b7b7b7" />
+
+    <LinearLayout
+        android:id="@+id/person_cardmanager_failinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/person_cardmanager_checkimg1" />
+
+        <TextView
+            android:id="@+id/person_cardmanager_checktext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="验证码输入错误"
+            android:textColor="#424242"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/person_cardmanager_checkbuttonsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#2673d7"
+        android:text="提交"
+        android:textColor="@color/whitecolortext"
+        android:textSize="15sp" />
+
+</LinearLayout>

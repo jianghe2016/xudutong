@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EFEFF4"
+    tools:context="com.xdt.xudutong.waituse.ProblemsActivity">
+
+    <include layout="@layout/title_bar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:drawableLeft="@mipmap/bike_problem_shouqi"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="扫码借车收费标准"
+                android:textColor="#5b5b5b"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2d2d2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_biaozhun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1.5dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="1、	每天使用不限次数，每次一小时内免费。"
+                    android:textColor="#5b5b5b"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="2、	超过一小时后，按1元每小时收费，一天20元封顶。"
+                    android:textColor="#5b5b5b"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="注：现按照押金记账扣费，待手机在线支付功能上线，用户需补齐押金，若未补齐不允许扫码借车。"
+                    android:textColor="#5b5b5b"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:drawableLeft="@mipmap/bike_problem_shouqi"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="无法借、还车处理办法"
+                android:textColor="#5b5b5b"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2d2d2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_banfa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="1、 若许都通卡已开通小绿业务，不能进行扫码借车，请联系许都通公司，电话：0374-7021111。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="2、	开锁成功，若还未成功借车，请联系许昌公共自行车管理中心，电话：0374-3332929（24小时）。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="3、	在使用小绿的途中车出现故障，请联系许昌公共自行车管理中心，电话：0374-3332929（24小时）。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="4、	还车时没有车桩，请联系许昌公共自行车管理中心，电话：0374-3332929（24小时）。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="5、	非正常使用下超时还车（包含：车辆故障，异常订单），费用有异议请联系许都通公司，电话：0374-7021111。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:drawableLeft="@mipmap/bike_problem_shouqi"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="如何办理损坏、遗失赔偿"
+                android:textColor="#5b5b5b"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2d2d2"/>
+
+            <LinearLayout
+                android:id="@+id/ll_peishang"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="1、	若自行车遗失，请到许昌公共自行车管理中心，按750元/辆办理赔偿手续，电话：0374-3332929（24小时）。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingExtra="1.2dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="2、	因使用不当，自行车车架和车轮发生断裂或扭曲变形，按实际损失赔偿，请联系许昌公共自行车管理中心，电话：0374-3332929（24小时）。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:drawableLeft="@mipmap/bike_problem_shouqi"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="温馨提示"
+                android:textColor="#5b5b5b"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d2d2d2"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_tishi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_tishi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="1、	若本人已借出公共自行车，但未还车，请还好车后，再借车。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="2、	借车时听到语音提示“通讯故障暂停使用”，请等待3-5分钟后，换桩借车。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="3、	扫码借车时，未有语音提示或指示灯未亮，可换桩借车。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="4、	借车限本人使用，不得转借他人。擅借他人使用，发生的一切问题由本人负责。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="5、	还车时要将车稍微提起扶正后推入车桩，待语音提示还车成功后，在离开。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="6、	借车成功后20秒内推出，否则20秒后车会自动锁住，同时车自动进入未还车状态，将造成第二次无法借车，若不能二次借车，请联系许都通公司，电话0374-7021111。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="7、	借车前请仔细检查车辆有无损坏，如有损坏请勿借用，否则造成的交通事故自行承担。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#FFFFFF"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="8、	骑车过程中请遵守交通规则，如有违反后果自行承担。"
+                    android:textColor="#5B5B5B"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

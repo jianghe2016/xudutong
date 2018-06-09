@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_seletor_white_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/biaoti"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.xdt.xudutong.tianjian.HtmlChatInputView
+        android:id="@+id/chatinputview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bgcolor_white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+    </com.xdt.xudutong.tianjian.HtmlChatInputView>
+    <ImageView
+        android:id="@+id/speechdel_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dpx_076"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dpx_022"
+        android:paddingLeft="@dimen/dpx_020"
+        android:paddingRight="@dimen/dpx_020"
+        android:src="@drawable/chatinput_status_image"
+        android:visibility="invisible" >
+    </ImageView>
+
+</RelativeLayout>

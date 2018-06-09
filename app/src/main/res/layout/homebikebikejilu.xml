@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/home_xiaolvbikejiluqueryback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="骑行记录"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_gongjijinbackaround"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_gongjijinshurubackaround"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="许都通卡号 :"
+                android:textColor="@color/blacktext"
+                android:textSize="16sp" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/home_xiaolvbikejiluqueryeduittext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:maxLength="18"
+                android:paddingRight="5dp"
+                android:textCursorDrawable="@drawable/color_cursor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_gongjijinshurubackaround"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="开始日期 :"
+                android:textColor="@color/blacktext"
+                android:textSize="16sp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/blacktext"
+                android:gravity="center_vertical"
+                android:id="@+id/home_xiaolvbikejiluquerystartdate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_gongjijinshurubackaround"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="结束日期 :"
+                android:textColor="@color/blacktext"
+                android:textSize="16sp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/blacktext"
+                android:gravity="center_vertical"
+                android:id="@+id/home_xiaolvbikejiluqueryenddate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/home_xiaolvbikejiluquerysubmit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/home_gongjijinsubmitbackaround"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/whitecolortext"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

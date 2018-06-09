@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<script type="text/javascript">
+		var sysPlatform;
+		window.onload = function() {
+			var ua = navigator.userAgent.toLowerCase(); //判断浏览器类型
+			if(/iphone|ipad|ipod/.test(ua)) { //调用设备对象的test方法判断设备类型
+				sysPlatform = "IOS";
+			} else if(/android/.test(ua)) {
+				sysPlatform = "ANDROID";
+			}
+		}
+		//IOS方法调用
+		var ios = {
+			//买入事件
+			appBuy: function() {
+			//	window.webkit.messageHandlers.appBuy.postMessage(null);
+			},
+			//点击进去基金详情
+			appDetail:function(){
+				window.webkit.messageHandlers.appDetail.postMessage({order:'许都通，让您的生活更轻松'});
+			}
+
+		};
+		var android = {
+			//买入事件
+			appBuy: function() {
+				window.h5api.appBuy();
+			},
+			//点击进去基金详情
+			appDetail: function() {
+				window.h5api.appDetail();
+			}
+		}
+
+		function app_buy() {
+			if(sysPlatform == "ANDROID") {
+				android.appBuy();
+			} else {
+				ios.appBuy()
+			}
+		}
+
+		function app_detail() {
+			if(sysPlatform == "ANDROID") {
+				android.appDetail();
+			} else {
+				ios.appDetail()
+			}
+		}
+	</script>
+
+	<body>
+		<!--banner-->
+		<section class="banner">
+			<img src="img/index/banner.png" width="100%" />
+		</section>
+		<!--content-->
+		<section class="content">
+			<div class="titleDes">
+				<p>惠民宝是中国工商银行旗下的一款理财产品，为小微企业、金融机构以及个人提供专业、透明、高效的金融信息服务。</p>
+			</div>
+			<!--立即买入-->
+			<div class="nowBuy">
+				<h1>惠民宝基金</h1>
+				<div class="investment">
+					<span class="line"></span>
+					<p class="horizon">投资期限<span>90</span>天</p>
+					<p class="money">金额起投<span>100</span>元</p>
+				</div>
+				<div class="income">
+					<div class="incomeNum"  onclick="app_detail()">5.20<span style="font-size: 0.32rem;">%</span></div>
+					<p class="incomeTitle">预期年化收益率</p>
+					<div class="buyBtn" id="app_buy" onclick="app_buy();">立即买入</div>
+				</div>
+			</div>
+			<!--收益行情-->
+			<div class="quotations">
+				<div class="quotationsWord">
+					<p class="quotationsTitle">收益趋势行情明显</p>
+					<p class="quotationsDes">今年以来周期品，大盘价值等不同风格板块轮番上涨，A股呈现明显的结构性趋势行情，且还将延续。</p>
+				</div>
+				<div id="box" style="width:100%;height: 270px; background-color: #FFFFFF;"></div>
+			</div>
+			<!--到账-->
+			<div class="paymentDate">
+				<p class="paymentTitle">T+0到账</p>
+				<p class="paymentDes">在周末、节假日正常计算收益，但不显示（收益显示为0），该部分收益将统一在下一个交易日更新展现。</p>
+				<div class="paymentTable">
+					<ul>
+						<li class="headerTitle mui-clearfix">
+							<span class="paymentTime">申购时间</span>
+							<span class="incomeTime">计算收益时间</span>
+							<span class="endTime">收益到账时间</span>
+						</li>
+						<li class="mui-clearfix">
+							<span class="paymentTime">周一15:00-周二15:00</span>
+							<span class="incomeTime">周三</span>
+							<span class="endTime">周四</span>
+						</li>
+						<li class="mui-clearfix">
+							<span class="paymentTime">周二15:00-周三15:00</span>
+							<span class="incomeTime">周四</span>
+							<span class="endTime">周五</span>
+						</li>
+						<li class="mui-clearfix">
+							<span class="paymentTime">周三15:00-周四15:00</span>
+							<span class="incomeTime">周五</span>
+							<span class="endTime">下周一</span>
+						</li>
+						<li class="mui-clearfix">
+							<span class="paymentTime">周四15:00-周五15:00</span>
+							<span class="incomeTime">下周一</span>
+							<span class="endTime">下周二</span>
+						</li>
+						<li class="mui-clearfix">
+							<span class="paymentTime">周五15:00-下周一15:00</span>
+							<span class="incomeTime">下周二</span>
+							<span class="endTime">下周三</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--为什么选择惠民宝-->
+			<div class="resonSelect">
+				<p class="resonTitle">为什么选择惠民宝</p>
+				<div class="resonList">
+					<ul>
+						<li>
+							<img src="img/index/first.png" width="100%" />
+							<p style="padding-right: 0.53rem;">拥有丰富的风控经验，坐拥国际领先的IPC风控技术，从源头上保障资产安全。</p>
+						</li>
+						<li>
+							<img src="img/index/second.png" width="100%" />
+							<p style="padding-left: 0.533rem;">每笔业务预先计提一定比例的风险保障金，对违约先行赔付，进一步保障投资人利益。</p>
+						</li>
+						<li>
+							<img src="img/index/first.png" width="100%" />
+							<p style="padding-right: 0.53rem;">7*24小时快速提现 赎回份额处理迅速</p>
+						</li>
+						<li>
+							<img src="img/index/first.png" width="100%" />
+							<p style="padding-left: 0.533rem;">改革+科技，推动银行业稳步发展，实力雄厚，未来可期。</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		(function($,doc){
+			$("#toDetail")[0].addEventListener("tap",function(){
+				window.location.href = "fundDetail.html"
+			})
+		})(mui,document)
+	</script>
+	<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/indexEcharts.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

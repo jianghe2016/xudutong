@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whitecolortext"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <!--第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="订单信息"
+            android:textColor="#7b7b7b"
+            android:textSize="16sp" />
+
+        <TextView
+            android:gravity="end"
+            android:id="@+id/home_phone_money_buttom_popwindowpayfororderinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:textColor="@color/blacktext"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="10dp"
+        android:background="#cfcccc" />
+    <!--第二行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="当前余额"
+            android:textColor="#7b7b7b"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/home_phonemoney_popwindowtext2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:textColor="@color/blacktext"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="10dp"
+        android:background="#cfcccc" />
+    <!--第三行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="付款方式"
+            android:textColor="#7b7b7b"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:text="银联支付"
+            android:textColor="@color/blacktext"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginTop="10dp"
+        android:background="#cfcccc" />
+</LinearLayout>

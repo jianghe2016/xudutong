@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hoem_cardgropu_button3item2text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_bianmin"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="15dp"
+        android:textColor="@color/weizhangothercar"
+        android:textSize="12sp" />
+</LinearLayout>

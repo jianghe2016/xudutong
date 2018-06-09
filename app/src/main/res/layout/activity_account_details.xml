@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F4F5"
+    android:orientation="vertical"
+    tools:context="com.xdt.xudutong.ICBC.AccountDetailsActivity">
+
+
+    <include layout="@layout/icon_title_bar"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="账户状态"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="已开户"/>
+    </LinearLayout>
+
+    <include layout="@layout/line2"/>
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="账户余额"/>
+
+        <TextView
+            android:id="@+id/tv_yue"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="0.00"/>
+    </LinearLayout>
+
+    <include layout="@layout/line2"/>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="账号"/>
+
+        <TextView
+            android:id="@+id/tv_card_num"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="111111111111111111111"/>
+    </LinearLayout>
+
+    <include layout="@layout/line2"/>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="开立渠道"/>
+
+        <TextView
+            android:id="@+id/tv_way"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="自助终端"/>
+    </LinearLayout>
+
+    <include layout="@layout/line2"/>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="开立时间"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="2018-12-18"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="姓名"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="Lily"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="身份证"/>
+
+        <TextView
+            android:id="@+id/tv_ID_num"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="411000000000000000000"/>
+    </LinearLayout>
+
+    <include layout="@layout/line2"/>
+
+
+
+
+    <LinearLayout
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="手机号"/>
+
+        <TextView
+            android:id="@+id/tv_phoneNum"
+            android:gravity="center_vertical|end"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:layout_height="match_parent"
+            android:text="110"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edittext2"
+        android:gravity="center"
+        android:text="注销"
+        android:textColor="@color/whitecolortext"
+        android:textSize="15sp" />/>
+
+</LinearLayout>

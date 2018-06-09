@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60.5dp"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_item1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="30dp">
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/home_huiminbaoselectcard_buttom_popwindowimg2"/>
+
+        <TextView
+            android:id="@+id/tv_select_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="电子钱包"
+            android:textColor="#0f0f0f"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="30dp">
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/xdt_chongzhi_gongshang"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="中国工商银行储蓄卡（5648）"
+                android:textColor="#0f0f0f"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="银行单笔限额10000.00元"
+                android:textColor="#818181"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"/>
+</LinearLayout>

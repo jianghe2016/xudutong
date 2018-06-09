@@ -1,0 +1,162 @@
+package com.xdt.xudutong.homefragment;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
+import com.xdt.xudutong.R;
+import com.xdt.xudutong.adapder.ProductRecyclerAdapterone;
+import com.xdt.xudutong.bean.TrainTicketQuery;
+import com.xdt.xudutong.frgment.BaseActivity;
+import com.xdt.xudutong.utils.DataAnalysetwo;
+import com.xdt.xudutong.utils.SpUtils;
+import com.xdt.xudutong.view.LogUtil;
+
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by Administrator on 2017/5/23.
+ */
+
+public class Homebuttongroupbuttonfivenextone extends BaseActivity {
+
+    private EditText buttongroup_button51_eduittext1;
+    private RecyclerView buttongroup_button51_recycleview1;
+    private ProgressBar homebuttongroup_button51progressbar1;
+    private List list1;
+    private List list2;
+    private Gson gson;
+    private ImageView home_seach51button;
+    private LinearLayout homebuttongroup_button51back1;
+    private List trainlistdata;
+
+    @Override
+    public void setMyContentView() {
+        setContentView(R.layout.home_buttongroup_button51);
+    }
+
+    @Override
+    public void initView() {
+        homebuttongroup_button51back1 = (LinearLayout) findViewById(R.id.homebuttongroup_button51back);
+        home_seach51button = (ImageView) findViewById(R.id.home_seach51);
+        homebuttongroup_button51progressbar1 = (ProgressBar) findViewById(R.id.homebuttongroup_button51progressbar);
+        buttongroup_button51_recycleview1 = (RecyclerView) findViewById(R.id.buttongroup_button51_rlistview);
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        llm.setOrientation(LinearLayout.VERTICAL);
+        buttongroup_button51_recycleview1.setLayoutManager(llm);
+        buttongroup_button51_eduittext1 = (EditText) findViewById(R.id.buttongroup_button51_eduittext);
+        buttongroup_button51_eduittext1.setText("");
+        initData();
+    }
+
+    private void initData() {
+        list1 = new ArrayList();
+        list2 = new ArrayList();
+        gson = new Gson();
+        homebuttongroup_button51back1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (fastClick()) {
+                    finish();
+                }
+            }
+        });
+        home_seach51button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (fastClick()) {
+                    Intent intent = new Intent(Homebuttongroupbuttonfivenextone.this, Homebuttongroupbuttonfive.class);
+                    startActivity(intent);
+                }
+            }
+        });
+        buttongroup_button51_eduittext1.addTextChangedListener(new TextWatcher() {
+
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String s1 = s.toString();
+                if (!s1.isEmpty()) {
+                    trainlistdata = DataAnalysetwo.readFile(Homebuttongroupbuttonfivenextone.this, s1);
+                    //这个里面取list中的值
+                    for (int i = 0; i < trainlistdata.size(); i++) {
+                        String s3 = trainlistdata.get(i).toString();
+                        LogUtil.d("s333333333333333", s3);
+                        JsonReader reader = new JsonReader(new StringReader(s3));
+                        reader.setLenient(true);
+                        TrainTicketQuery demotwo = gson.fromJson(reader, TrainTicketQuery.class);
+                        String label = demotwo.getLabel();
+                        list1.add(label);
+                    }
+                    for (int j = 0; j < trainlistdata.size(); j++) {
+                        String s2 = trainlistdata.get(j).toString();
+                        JsonReader reader = new JsonReader(new StringReader(s2));
+                        reader.setLenient(true);
+                        TrainTicketQuery demotwo = gson.fromJson(reader, TrainTicketQuery.class);
+                        String label = demotwo.getValue();
+                        list2.add(label);
+                    }
+                }
+
+
+                showData(list1, list2);
+                buttongroup_button51_recycleview1.setVisibility(View.VISIBLE);
+                homebuttongroup_button51progressbar1.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+
+        });
+    }
+
+    private void showData(final List list1, final List list2) {
+        ProductRecyclerAdapterone productRecyclerAdapter = new ProductRecyclerAdapterone(Homebuttongroupbuttonfivenextone.this, list1);
+        buttongroup_button51_recycleview1.setAdapter(productRecyclerAdapter);
+        productRecyclerAdapter.setOnItemClickListener(new ProductRecyclerAdapterone.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                if (fastClick()) {
+                    //获取点击条目的代号和内容
+                    String accuratetarinquerytwo1 = list1.get(position).toString();
+                    String accuratetarinqueryonetext = list2.get(position).toString();
+                    buttongroup_button51_recycleview1.setVisibility(View.GONE);
+                    homebuttongroup_button51progressbar1.setVisibility(View.GONE);
+                    //点击条目的内容进行文件精确查询，得到地址代号
+                    String accuratetarinqueryone = DataAnalysetwo.readFile2(Homebuttongroupbuttonfivenextone.this, accuratetarinquerytwo1);
+                    //保存到本地条目内容，和条目代号
+                    SpUtils.putParam(Homebuttongroupbuttonfivenextone.this, "accuratetarinqueryonetext", accuratetarinqueryonetext);
+                    SpUtils.putParam(Homebuttongroupbuttonfivenextone.this, "accuratetarinqueryone", accuratetarinqueryone);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("accuratetarinqueryonetext", accuratetarinqueryonetext);
+                    bundle.putString("accuratetarinqueryone", accuratetarinqueryone);
+                    Intent intent = new Intent();
+                    intent.putExtras(bundle);
+                    // 返回intent
+                    setResult(14, intent);
+                    finish();
+                }
+            }
+        });
+
+    }
+}

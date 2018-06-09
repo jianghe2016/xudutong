@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="73dp">
+
+    <LinearLayout
+        android:paddingLeft="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16sp"
+            android:id="@+id/person_merchant_searchnetid_recycleviewone1_item1text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="音乐社会"
+            android:textColor="#343434" />
+
+        <ImageView
+            android:id="@+id/person_merchant_searchnetid_recycleviewone1_item1img1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/personmerchantsearchnetiddetailsnext1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f2f2f2" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/person_merchant_searchnetid_recycleviewone1_innerrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

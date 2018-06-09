@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="440dp"
+              android:orientation="vertical"
+             tools:context="com.xdt.xudutong.huiminbao.BankCardSelectFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/iv_cancle"
+            android:layout_width="25dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/home_phone_money_buttom_popwindowimg1"
+            android:layout_height="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="选择付款方式"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#999999"/>
+
+     <ListView
+         android:id="@+id/list_view"
+         android:scrollbars="none"
+         android:divider="@null"
+         android:dividerHeight="0dp"
+         android:layout_width="match_parent"
+         android:background="#FFFFFF"
+         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_add_bank_card"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="15sp"
+        android:paddingLeft="16dp"
+        android:textColor="#0f0f0f"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/home_huiminbaoselectcard_buttom_popwindowimg4"
+        android:text="添加银行卡付款"/>
+
+</LinearLayout>

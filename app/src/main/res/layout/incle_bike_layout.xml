@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_marginLeft="25dp"
+              android:layout_marginRight="25dp"
+              android:orientation="vertical"
+              android:background="#FFFFFF"
+              android:layout_height="120dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:textColor="#05AF59"
+        android:text="借车标准"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#3c3c3c"
+        android:textSize="10sp"
+        android:text="借车卡每天使用不限次数，每次一小时内免费"/>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#3c3c3c"
+        android:textSize="10sp"
+        android:text="超过一小时收费1元，超过两小时收费2元，超过三小时"/>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#3c3c3c"
+        android:textSize="10sp"
+        android:text="以上按5元每小时收取，一天20元封顶"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:background="#d2d2d2"
+        android:layout_height="1dp"/>
+    
+    <TextView
+        android:id="@+id/tv_xudoutong"
+        android:layout_marginTop="10dp"
+        android:text="许都通公司：0374-7021111"
+        android:textColor="#3c3c3c"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_guanlicenter"
+        android:layout_marginTop="10dp"
+        android:text="许昌公共自行车管理中心：0374-3332929"
+        android:textColor="#3c3c3c"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

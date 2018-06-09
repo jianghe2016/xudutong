@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/locallife_scenerydetailsback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="景点详情"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/locallife_scenerydetialscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/search_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/locallife_scenerydetialviewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp" />
+
+                    <ImageView
+                        android:id="@+id/locallife_scenerydetialimgview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/locallife_scenerydetialtext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/blackline"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/main_bianmin" />
+
+                <TextView
+                    android:id="@+id/locallife_scenerydetialtext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/textBFBFBF2"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/locallife_scenerydetialtext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:textColor="@color/textBFBFBF2"
+                    android:textSize="14sp" />
+                <com.xdt.xudutong.view.MapContainer
+                    android:id="@+id/locallife_scenerydetialMapContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.amap.api.maps.MapView
+                        android:id="@+id/SceneryDetailsmapview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+                </com.xdt.xudutong.view.MapContainer>
+                <TextView
+                    android:id="@+id/locallife_scenerydetialtext4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textColor="@color/textBFBFBF2"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <include
+                android:id="@+id/emptystates_layout"
+                android:visibility="gone"
+                layout="@layout/searchemptylayout" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

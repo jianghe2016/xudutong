@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/xiaolvtakingtop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/custom_gaodelittlegreentakingingback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/home_xiaolvbikejilutoptext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="骑行中"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/gaodemapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@drawable/gaodemap_center_marker"
+            android:id="@+id/custom_gaodetaking_centermark"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <include
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/custom_gaodelittlegreentakingtopview"
+            layout="@layout/custom_gaodelittlegreentaking_window"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="-200dp" />
+    </FrameLayout>
+</LinearLayout>

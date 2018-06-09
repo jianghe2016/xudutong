@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitecolortext"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bus_querycityrecycleitem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="***"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    <TextView
+        android:background="@color/main_bianmin"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

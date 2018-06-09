@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/whitecolortext"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:layout_marginLeft="20dp"
+        android:id="@+id/home_buttongroupbutton6querybuslineimg2"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:id="@+id/home_buttongroupbutton6querybuslineimg1"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/home_buttongroupbutton6querybuslinetext1"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/textBFBFBF" />
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/locallife_headviewtext">
+
+        <LinearLayout
+            android:id="@+id/home_cardgroup_button622back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/home_weatherback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/home_cardgroup_button622headtop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/backlinearklayoutwithmarinleft"
+            android:gravity="center"
+            android:text="公交卡查询"
+            android:textColor="@color/whitecolortext"
+            android:textSize="@dimen/headviewtextsize" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/home_cardgroup_button622text"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/whitecolortext"
+        android:hint="请输入您的姓名"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/blacktext"
+        android:textCursorDrawable="@drawable/color_cursor" />
+
+
+    <EditText
+        android:maxLength="18"
+        android:inputType="number"
+        android:id="@+id/home_cardgroup_button622text2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/whitecolortext"
+        android:hint="请输入您的身份证号"
+        android:paddingLeft="20dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/blacktext"
+        android:textCursorDrawable="@drawable/color_cursor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:text="*姓名与身份证号必须一致"
+        android:textColor="#6f6f70" />
+
+    <TextView
+        android:id="@+id/home_cardgroup_button622nextsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/home_gongjijinsubmitbackaround"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/whitecolortext"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/home_gongjijinimgb" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

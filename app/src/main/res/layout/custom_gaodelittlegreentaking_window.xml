@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/whitecolortext"
+    android:orientation="vertical">
+
+<TextView
+    android:paddingBottom="15dp"
+    android:textColor="#9a9999"
+    android:textSize="15sp"
+    android:paddingTop="15dp"
+    android:gravity="center"
+    android:text="骑行时间"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<TextView
+    android:id="@+id/custom_gaodelittlegreentakinging_window_text1"
+    android:gravity="center"
+    android:textSize="40sp"
+    android:textColor="#333333"
+    android:text="00:04:47"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_width="0dp"
+    android:layout_height="match_parent">
+<TextView
+    android:textColor="#d7d7d7"
+    android:text="车牌号 : "
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+<TextView
+    android:id="@+id/custom_gaodelittlegreentakinging_window_text2"
+    android:textColor="#333333"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>
+    <LinearLayout
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="#d7d7d7"
+                android:text="当前费用 : "
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/custom_gaodelittlegreentakinging_window_text3"
+                android:gravity="end"
+                android:textColor="#333333"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+<TextView
+    android:layout_marginBottom="15dp"
+    android:gravity="center"
+    android:textColor="#2673d7"
+    android:textSize="15sp"
+    android:text="还车后停止计费"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</LinearLayout>

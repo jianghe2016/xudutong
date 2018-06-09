@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PayPsdInputView">
+        <attr name="maxCount" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="bottomLineColor" format="color" />
+        <attr name="radiuss" format="dimension" />
+        <attr name="divideLineWidth" format="dimension" />
+        <attr name="divideLineColor" format="color" />
+        <attr name="rectAngle" format="dimension" />
+        <attr name="focusedColor" format="color"/>
+        <attr name="psdType" format="enum">
+            <enum name="weChat" value="0" />
+            <enum name="bottomLine" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="drop_down_list_attr">
+        <attr name="isDropDownStyle" format="boolean" />
+        <attr name="isOnBottomStyle" format="boolean" />
+        <attr name="isAutoLoadOnBottom" format="boolean" />
+    </declare-styleable>
+
+
+    <!-- 自定义控件属性值 -->
+    <declare-styleable name="PercentLayout_Layout">
+        <attr name="layout_widthPercent" format="string" />
+        <attr name="layout_heightPercent" format="string" />
+
+        <attr name="layout_marginPercent" format="string" />
+        <attr name="layout_marginLeftPercent" format="string" />
+        <attr name="layout_marginTopPercent" format="string" />
+        <attr name="layout_marginRightPercent" format="string" />
+        <attr name="layout_marginBottomPercent" format="string" />
+        <attr name="layout_marginStartPercent" format="string" />
+        <attr name="layout_marginEndPercent" format="string" />
+
+        <attr name="layout_textSizePercent" format="string" />
+
+        <attr name="layout_maxWidthPercent" format="string" />
+        <attr name="layout_maxHeightPercent" format="string" />
+        <attr name="layout_minWidthPercent" format="string" />
+        <attr name="layout_minHeightPercent" format="string" />
+
+        <attr name="layout_paddingPercent" format="string" />
+        <attr name="layout_paddingTopPercent" format="string" />
+        <attr name="layout_paddingBottomPercent" format="string" />
+        <attr name="layout_paddingLeftPercent" format="string" />
+        <attr name="layout_paddingRightPercent" format="string" />
+        <!-- 主题颜色 -->
+        <attr name="theme_color" format="color" />
+        <!-- 确认图标 -->
+        <attr name="choice_active" format="reference" />
+        <!-- 个人信息背景 -->
+        <attr name="person_info_background" format="reference" />
+        <!-- 未读消息字体颜色 -->
+        <attr name="unread_msg_text_color" format="color" />
+        <!-- 确认checkbox图标 -->
+        <attr name="checkbox_background" format="reference" />
+        <!-- 提示框确认图标 -->
+        <attr name="popup_confirm_button_background" format="reference" />
+        <!-- 右箭头 -->
+        <attr name="theme_right_arrow" format="reference" />
+        <!-- 单个按钮样式-->
+        <attr name="single_btn_bg" format="reference" />
+        <!-- radio文字样式 -->
+        <attr name="comm_radio_text_color" format="reference" />
+        <!-- radio图片样式 -->
+        <attr name="comm_radio_pic" format="reference" />
+        <!-- 弹出选择列表确定按钮样式 -->
+        <attr name="comm_pop_sure_btn_bg" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="XCRoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="innerRoundColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="maxs" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="XCAutoNewlineLayout">
+        <attr name="item_h_space" format="dimension" />
+        <attr name="item_v_space" format="dimension" />
+    </declare-styleable>
+
+    <!-- 卫星式菜单 属性 -->
+    <attr name="position">
+        <enum name="left_top" value="0" />
+        <enum name="left_bottom" value="1" />
+        <enum name="right_top" value="2" />
+        <enum name="right_bottom" value="3" />
+    </attr>
+    <attr name="radius" format="dimension" />
+    <declare-styleable name="XCArcMenuView">
+        <attr name="position"></attr>
+        <attr name="radius" />
+    </declare-styleable>
+
+
+    <!-- 侧拉View -->
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RulerView">
+        <attr name="ruler_valueStart" format="float" />
+        <attr name="ruler_valueEnd" format="float" />
+        <attr name="ruler_valueCurrent" format="float" />
+        <attr name="ruler_valueUnit" format="float" />
+        <attr name="ruler_valueUnitMarkNums" format="integer" />
+        <attr name="ruler_flingSpeed" format="float" />
+        <attr name="ruler_unitWidth" format="dimension" />
+        <attr name="ruler_currentMarkHeight" format="dimension" />
+        <attr name="ruler_currentMarkWidth" format="dimension" />
+        <attr name="ruler_currentMarkColor" format="color" />
+        <attr name="ruler_markTextSize" format="dimension" />
+        <attr name="ruler_shaderColor_drak" format="color" />
+        <attr name="ruler_shaderColor_little" format="color" />
+        <attr name="ruler_markHeight" format="dimension" />
+        <attr name="ruler_markWidth" format="dimension" />
+        <attr name="ruler_smallMarkWidth" format="dimension" />
+        <attr name="ruler_smallMarkHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RepeatView">
+        <attr name="RepeatView_orientation" format="integer">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="RepeatView_image" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DragGridView">
+        <attr name="div_color" format="color" />
+        <attr name="item_background_color" format="color" />
+        <attr name="columnscount" format="integer" />
+        <attr name="scale_num" format="float" />
+        <attr name="fixed_num" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfitProgerssBar">
+        <attr name="progress_backg_color" format="color"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+        <!-- Whether PullToRefreshListView has it's extras enabled. -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+        <!-- Whether the Drawable should be continually rotated as you pull -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="max" format="integer"/>
+        <attr name="progress" format="integer"/>
+        <attr name="startAngle" format="integer"/>
+        <attr name="ringColor" format="color" />
+        <attr name="ringProgressColor" format="color" />
+        <attr name="ringWidth" format="dimension"/>
+        <attr name="centreColor" format="color" />
+        <attr name="textColors" format="color" />
+        <attr name="textSizes" format="dimension" />
+        <attr name="textIsDisplayables" format="boolean"/>
+        <attr name="styles">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="DayPickerView">
+        <attr name="colorCurrentDay" format="color"/>
+        <attr name="colorSelectedDayBackground" format="color"/>
+        <attr name="colorSelectedDayText" format="color"/>
+        <attr name="colorPreviousDay" format="color"/>
+        <attr name="colorNormalDay" format="color" />
+        <attr name="colorMonthName" format="color" />
+        <attr name="colorDayName" format="color" />
+        <attr name="textSizeDay" format="dimension"/>
+        <attr name="textSizeMonth" format="dimension" />
+        <attr name="textSizeDayName" format="dimension" />
+        <attr name="headerMonthHeight" format="dimension" />
+        <attr name="selectedDayRadius" format="dimension" />
+        <attr name="calendarHeight" format="dimension" />
+        <attr name="enablePreviousDay" format="boolean" />
+        <attr name="currentDaySelected" format="boolean" />
+        <attr name="drawRoundRect" format="boolean" />
+        <attr name="firstMonth" format="enum">
+            <enum name="january" value="0" />
+            <enum name="february" value="1" />
+            <enum name="march" value="2" />
+            <enum name="april" value="3" />
+            <enum name="may" value="4" />
+            <enum name="june" value="5" />
+            <enum name="july" value="6" />
+            <enum name="august" value="7" />
+            <enum name="september" value="8" />
+            <enum name="october" value="9" />
+            <enum name="november" value="10" />
+            <enum name="december" value="11" />
+        </attr>
+        <attr name="lastMonth" format="enum">
+            <enum name="january" value="0" />
+            <enum name="february" value="1" />
+            <enum name="march" value="2" />
+            <enum name="april" value="3" />
+            <enum name="may" value="4" />
+            <enum name="june" value="5" />
+            <enum name="july" value="6" />
+            <enum name="august" value="7" />
+            <enum name="september" value="8" />
+            <enum name="october" value="9" />
+            <enum name="november" value="10" />
+            <enum name="december" value="11" />
+        </attr>
+    </declare-styleable>
+    <!--侧滑删除-->
+    <declare-styleable name="SwipeMenuView">
+        <attr name="swipeEnable" format="boolean"/>
+        <attr name="ios" format="boolean"/>
+        <attr name="leftSwipe" format="boolean"/>
+    </declare-styleable>
+    <!--ocr相机-->
+    <declare-styleable name="OCRCameraLayout">
+        <attr name="contentView" format="reference"/>
+        <attr name="centerView" format="reference"/>
+        <attr name="leftDownView" format="reference"/>
+        <attr name="rightUpView" format="reference"/>
+    </declare-styleable>
+    <!--下面两条为日历的控件-->
+    <declare-styleable name="CalendarPickerView">
+        <attr name="android:background"/>
+        <attr name="tsquare_dividerColor" format="color"/>
+        <attr name="tsquare_dayBackground" format="reference"/>
+        <attr name="tsquare_dayTextColor" format="color"/>
+        <attr name="tsquare_titleTextStyle" format="reference"/>
+        <attr name="tsquare_displayHeader" format="boolean"/>
+        <attr name="tsquare_displayDayNamesHeaderRow" format="boolean"/>
+        <attr name="tsquare_displayAlwaysDigitNumbers" format="boolean"/>
+        <attr name="tsquare_headerTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="calendar_cell">
+        <attr name="tsquare_state_selectable" format="boolean" />
+        <attr name="tsquare_state_current_month" format="boolean" />
+        <attr name="tsquare_state_today" format="boolean" />
+        <attr name="tsquare_state_range_first" format="boolean" />
+        <attr name="tsquare_state_range_middle" format="boolean" />
+        <attr name="tsquare_state_range_last" format="boolean" />
+        <attr name="tsquare_state_highlighted" format="boolean" />
+    </declare-styleable>
+</resources>

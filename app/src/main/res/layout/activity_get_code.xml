@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xdt.xudutong.activitys.GetCodeActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+    <include layout="@layout/title_bar_layout"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="验证码已发送至188****1111"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:textColor="#000000"
+        android:text="输入短信验证码"
+        />
+
+
+    <com.arron.passwordview.PasswordView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/passwordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cipherEnable="true" />
+       </LinearLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="重新发送"
+        android:textColor="#86B0E8"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/passwordView"
+        android:id="@+id/tv_time"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+   </LinearLayout>
+</RelativeLayout>

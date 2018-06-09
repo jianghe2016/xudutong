@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/headview"
+        android:background="@color/whitecolortext">
+
+        <LinearLayout
+            android:id="@+id/benefitthepeopleaboutopenanaccountback"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/BACK_JIANTOU"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/personmerchantsearchnetiddetailsback" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/whitetopgraytext"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-73dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/benefitthepeopleopenanaccounttopimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="开户"
+                android:textColor="@color/whitetopgraytext"
+                android:textSize="@dimen/headviewtextsize" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f6f5f5" />
+
+            <LinearLayout
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/whitecolortext"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.4"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="姓名"
+                            android:textColor="@color/lulugraytextcolor"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/benefitthepeopleaboutopenanaccounteduittext1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:hint="请输入本人真实姓名"
+                            android:textColor="@color/lulugraytextcolor"
+                            android:textColorHint="@color/luluhinttextcolor"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#cdcdcd" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/whitecolortext"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="身份证号"
+                            android:textColor="@color/lulugraytextcolor"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/benefitthepeopleaboutopenanaccounteduittext2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2.1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="请输入身份证号"
+                            android:maxEms="18"
+                            android:maxLines="1"
+                            android:textColor="@color/lulugraytextcolor"
+                            android:textColorHint="@color/luluhinttextcolor"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="16sp"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                    <ImageView
+                        android:id="@+id/benefitthepeopleaboutopenanaccountcamera"
+                        android:layout_width="25dp"
+                        android:layout_weight="0.3"
+                        android:background="#FFFFFF"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:src="@drawable/benefitthepeopleopenanaccountcamera"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cdcdcd" />
+
+            <LinearLayout
+                android:id="@+id/benefitthepeopleaboutopenanaccountitem3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/whitecolortext"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="卡号"
+                    android:textColor="@color/lulugraytextcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/benefitthepeopleaboutopenanaccounteduittext3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.3"
+                    android:background="@null"
+                    android:hint="请输入银行卡号"
+                    android:textColor="@color/lulugraytextcolor"
+                    android:textColorHint="@color/luluhinttextcolor"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/benefitthepeopleaboutopenanaccountcamera2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/benefitthepeopleopenanaccountcamera" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cdcdcd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/whitecolortext"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="手机号"
+                    android:textColor="@color/lulugraytextcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:id="@+id/benefitthepeopleaboutopenanaccounteduittext4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@null"
+                    android:hint="请输入银行预留手机号"
+                    android:textColor="@color/lulugraytextcolor"
+                    android:textColorHint="@color/luluhinttextcolor"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cdcdcd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whitecolortext"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="短信验证码"
+                    android:textColor="@color/lulugraytextcolor"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/benefitthepeopleaboutopenanaccounteduittext5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9.2"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:hint="请输入短信验证码"
+                    android:textColor="@color/lulugraytextcolor"
+                    android:textColorHint="@color/luluhinttextcolor"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/benefitthepeoplesenmessagelayoutsendmessage"
+                    android:layout_width="100dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/shape_edittext3"
+                    android:gravity="center"
+                    android:text="获取验证码"
+                    android:textColor="#c7000a" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp">
+                <!--        2a84f8-->
+                <CheckBox
+                    android:id="@+id/benefitthepeopleopenanaccountcheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:theme="@style/MyCheck_Box2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="我已阅读"
+                    android:textColor="#a1a0a0"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="《个人银行结算账户管理协议》"
+                    android:textColor="#c7000a"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="并同意相关内容"
+                    android:textColor="#a1a0a0"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/benefitthepeopleaboutopenanaccountsubmit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_edittext2"
+                android:gravity="center"
+                android:text="确认并开户"
+                android:textColor="@color/whitecolortext"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/benefitthepeopleaboutopenanaccountimgtext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/benefitthepeopleaboutopenanaccountprogress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/progressloading" />
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

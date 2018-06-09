@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/home_gongjijinshurubackaround"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/home_button_danweiinfo_shiyetext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入事业单位名称"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/blacktext"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/home_button_danweiinfo_shiyequery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/home_gongjijinsubmitbackaround"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="@color/whitecolortext"
+        android:textSize="18sp" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/home_gongjijinimgb" />
+    </LinearLayout>
+
+
+</LinearLayout>
